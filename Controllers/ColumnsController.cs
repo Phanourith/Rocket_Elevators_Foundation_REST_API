@@ -26,15 +26,15 @@ namespace RocketApi.Controllers
             {
                 return NotFound();
             }
-            return column.Status;
+            return column.status;
         }
 
         [HttpGet("update/{id}/{status}")]
-        public async Task<dynamic> UpdateColumnStatus(string status, long id)
+        public async Task<dynamic> UpdateColumnStatus(string Status, long id)
         {
             var column = await _context.columns.FindAsync(id);
             
-            column.Status = status;
+            column.status = Status;
             await _context.SaveChangesAsync();         
 
             return column;

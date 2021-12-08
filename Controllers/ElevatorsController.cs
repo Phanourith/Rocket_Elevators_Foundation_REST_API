@@ -39,15 +39,15 @@ namespace RocketApi.Controllers
             {
                 return NotFound();
             }
-            return elevator.Status;
+            return elevator.status;
         }
        
         [HttpGet("Offline")]
         public object GetElevatorsOffline()
         {
             return _context.elevators
-                  .Where(elevator => elevator.Status == "offline" || elevator.Status == "maintenance")
-                  .Select(elevator => new { elevator.Id, elevator.Status });
+                  .Where(elevator => elevator.status == "offline" || elevator.status == "maintenance")
+                  .Select(elevator => new { elevator.id, elevator.status });
 
         }
 
@@ -62,7 +62,7 @@ namespace RocketApi.Controllers
         {
             var elevator = await _context.elevators.FindAsync(id);
             
-            elevator.Status = status;
+            elevator.status = status;
             await _context.SaveChangesAsync();         
 
             return elevator;

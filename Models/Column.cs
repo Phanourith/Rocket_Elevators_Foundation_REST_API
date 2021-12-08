@@ -14,7 +14,7 @@ namespace RocketApi.Models
             var currentElevators = new List<Elevator>();
             foreach(Elevator elevator in filteredElevators) 
             {
-                if ( elevator.column_id == this.Id) 
+                if ( elevator.column_id == this.id) 
                 {
                     currentElevators.Add(elevator);
                 }

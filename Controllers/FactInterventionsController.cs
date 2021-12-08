@@ -31,8 +31,8 @@ namespace RocketApi.Controllers
         [HttpGet("specificbuilding/{id}")]
         public Tuple<Building, List<FactIntervention>> getSpecificBuildingsWithBuildingID(int id)
         {
-            var building = _context1.buildings.FirstOrDefault(a => a.Id == id);
-            IQueryable<FactIntervention> fact = _context2.fact_interventions.Where(a => a.buildingID == id);
+            var building = _context1.buildings.FirstOrDefault(a => a.id == id);
+            IQueryable<FactIntervention> fact = _context2.fact_interventions.Where(a => a.building_id == id);
             List<FactIntervention> factlist = fact.ToList();
             return Tuple.Create(building,factlist);
         }
@@ -40,8 +40,8 @@ namespace RocketApi.Controllers
         [HttpGet("specificintervention/{id}")]
         public Tuple<FactIntervention,Building> getSpecificInterventions(int id)
         {
-            FactIntervention fact = _context2.fact_interventions.FirstOrDefault(a => a.elevatorID == id);
-            Building building = _context1.buildings.FirstOrDefault(a => a.Id == fact.buildingID);
+            FactIntervention fact = _context2.fact_interventions.FirstOrDefault(a => a.elevator_id == id);
+            Building building = _context1.buildings.FirstOrDefault(a => a.id == fact.building_id);
             return Tuple.Create(fact,building);
         }
        

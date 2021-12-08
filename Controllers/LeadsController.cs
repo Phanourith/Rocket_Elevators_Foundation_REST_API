@@ -27,14 +27,14 @@ namespace RocketApi.Controllers
             List<Lead> notCustomers = new List<Lead>();
 
             DateTime currentDate = DateTime.Now;
-            List<Lead> filteredLeads = leads.Where(lead => lead.Created_at > currentDate.AddDays(Convert.ToDouble(-30))).ToList();
-            List<Customer> filteredCustomers = customers.Where(customer => customer.Created_at > currentDate.AddDays(Convert.ToDouble(-30))).ToList();
+            List<Lead> filteredLeads = leads.Where(lead => lead.created_at > currentDate.AddDays(Convert.ToDouble(-30))).ToList();
+            List<Customer> filteredCustomers = customers.Where(customer => customer.created_at > currentDate.AddDays(Convert.ToDouble(-30))).ToList();
 
             foreach (Lead lead in filteredLeads) 
             {
                 foreach (Customer customer in filteredCustomers) 
                 {
-                    if (lead.Email != customer.Email && lead.PhoneNumber != customer.ContactPhone && !notCustomers.Contains(lead)) {
+                    if (lead.email != customer.email_of_the_company_contact && lead.phone != customer.company_contact_phone && !notCustomers.Contains(lead)) {
                         notCustomers.Add(lead);
                     }
                 }

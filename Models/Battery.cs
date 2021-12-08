@@ -15,7 +15,7 @@ namespace RocketApi.Models
             var currentColumns = new List<Column>();
             foreach(Column column in filteredColumns) 
             {
-                if ( column.BatteryId == this.Id && column.getElevatorList(filteredElevators)) 
+                if ( column.battery_id == this.id && column.getElevatorList(filteredElevators)) 
                 {
                     currentColumns.Add(column);
                 }

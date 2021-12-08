@@ -50,7 +50,7 @@ namespace RocketApi.Controllers
                 return NotFound();
             }
 
-            return battery.Status;
+            return battery.status;
         }
 
         [HttpGet("update/{id}/{status}")]
@@ -58,7 +58,7 @@ namespace RocketApi.Controllers
         {
             var battery = await _context.batteries.FindAsync(id);
 
-            battery.Status = status;
+            battery.status = status;
             await _context.SaveChangesAsync();         
 
             return battery;
