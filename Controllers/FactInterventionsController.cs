@@ -45,35 +45,6 @@ namespace RocketApi.Controllers
             Building building = _context1.buildings.FirstOrDefault(a => a.Id == fact.buildingID);
             return Tuple.Create(fact,building);
         }
-
-        // [HttpGet("specificemployee/{id}")]
-        // public Tuple<Employee, List<BuildingDTO>> getSpecificBuildingsWithEmployeeID(int id)
-        // {
-        //     var employee = _context1.employees.FirstOrDefault(a => a.id == id);
-        //     IQueryable<FactIntervention> fact = _context2.fact_interventions.Where(a => a.employeeID == employee.id);
-        //     List<FactIntervention> factlist = fact.ToList();
-        //     BuildingDTO building;
-        //     List<BuildingDTO> buildings = new List<BuildingDTO>();
-        //     foreach (var item in factlist)
-        //     {
-        //         Building building1 = _context1.buildings.FirstOrDefault(a => a.Id == item.buildingID);
-        //         building = new BuildingDTO(building1.Id,building1.CustomerId,building1.AddressId);
-        //         if (buildings.Contains(building) == false)
-        //         {
-        //             List<FactIntervention> facts = _context2.fact_interventions.Where(a => a.employeeID == employee.id && a.buildingID == building.Id).ToList();
-        //             List<FactIntervention> factlists = facts.ToList();
-        //             building.ListIntervention = factlist;
-        //             IQueryable<BuildingDetail> details = _context1.buildingDetails.Where(a => a.BuildingID == building.Id);
-        //             List<BuildingDetail> detailsList = details.ToList();
-        //             building.ListIntervention = factlists;
-        //             building.ListBuildingDetails = detailsList;
-        //             buildings.Add(building);
-        //         }
-        //     }
-        //     var tuple = Tuple.Create(factlist,buildings);
-        //     return Tuple.Create(employee,buildings);
-        // }
-
        
     }
 }

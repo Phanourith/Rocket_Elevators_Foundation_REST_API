@@ -2,7 +2,7 @@ using System.Collections.Generic;
 
 namespace RocketApi.Models
 {
-    public partial class BuildingDTO{
+    public partial class BuildingDataTransfer{
 
         public long Id { get; set; }
         public long? CustomerId { get; set; }
@@ -10,7 +10,7 @@ namespace RocketApi.Models
         public List<FactIntervention> ListIntervention { get; set; }
         public List<BuildingDetail> ListBuildingDetails { get; set; }
 
-        public BuildingDTO(long id, long? customerId, long? addressId){
+        public BuildingDataTransfer(long id, long? customerId, long? addressId){
             this.Id = id;
             this.CustomerId = customerId;
             this.AddressId = addressId;
