@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\keosa\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\keosa\\.nuget\\packages"
+    ]
+  }
+}
