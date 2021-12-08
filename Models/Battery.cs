@@ -5,9 +5,9 @@ namespace RocketApi.Models
 {
     public class Battery
     {
-        public long Id { get; set; }
-        public long BuildingId {get; set; }
-        public string Status { get; set; }
+        public long id { get; set; }
+        public long building_id {get; set; }
+        public string status { get; set; }
 
 
         public Boolean getColumnList(List<Column> filteredColumns, List<Elevator> filteredElevators) 

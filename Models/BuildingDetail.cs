@@ -7,12 +7,12 @@ namespace RocketApi.Models
 {
     public partial class BuildingDetail
     {
-        public long Id { get; set; }
-        public long BuildingId { get; set; }
-        public string InformationKey { get; set; }
-        public string Value { get; set; }
-        public DateTime CreatedAt { get; set; }
-        public DateTime UpdatedAt { get; set; }
+        public long id { get; set; }
+        public long building_id { get; set; }
+        public string informationKey { get; set; }
+        public string value { get; set; }
+        public DateTime createdAt { get; set; }
+        public DateTime updatedAt { get; set; }
 
         public virtual Building Building { get; set; }
     }

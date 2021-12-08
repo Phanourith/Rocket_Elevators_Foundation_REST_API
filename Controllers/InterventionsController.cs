@@ -27,8 +27,8 @@ namespace RocketApi.Controllers
         public List<Intervention> get()
         {
             List<Intervention> allInterventions = _context.interventions.ToList();
-            List<Intervention> pendings = allInterventions.Where(intervention => intervention.Status == "pending").ToList();
-            List<Intervention> noTime = pendings.Where(intervention => intervention.StartDateAndTime == null).ToList();
+            List<Intervention> pendings = allInterventions.Where(intervention => intervention.status == "pending").ToList();
+            List<Intervention> noTime = pendings.Where(intervention => intervention.start_intervention == null).ToList();
             return noTime;
         }
 
@@ -36,8 +36,8 @@ namespace RocketApi.Controllers
         public Intervention start(long id)
         {
             var intervention =  _context.interventions.Find(id);
-            intervention.StartDateAndTime = DateTime.Now;
-            intervention.Status = "inProgrss";
+            intervention.start_intervention = DateTime.Now;
+            intervention.status = "inProgrss";
             _context.SaveChanges();         
             return intervention;
         }
@@ -46,8 +46,8 @@ namespace RocketApi.Controllers
         public Intervention end(long id)
         {
              var intervention =  _context.interventions.Find(id);
-            intervention.EndDateAndTime = DateTime.Now;
-            intervention.Status = "completed";
+            intervention.end_intervention = DateTime.Now;
+            intervention.status = "completed";
             _context.SaveChanges();         
             return intervention;
         }

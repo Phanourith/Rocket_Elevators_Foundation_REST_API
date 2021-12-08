@@ -5,8 +5,8 @@ namespace RocketApi.Models
 {
     public class Elevator
     {
-        public long Id { get; set; }
-        public string Status { get; set; }
-        public long ColumnId { get; set; }
+        public long id { get; set; }
+        public string status { get; set; }
+        public long column_id { get; set; }
     }
 } 

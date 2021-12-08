@@ -5,7 +5,6 @@ using RocketApi.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
-using RocketApi.Models;
 
 namespace RocketApi.Controllers
 {

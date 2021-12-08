@@ -8,11 +8,11 @@ namespace RocketApi.Models
     public partial class FactIntervention
     {
         public long id { get; set; }
-        public long employeeID { get; set; }
-        public long buildingID { get; set; }
-        public long? batteryID { get; set; }
-        public long? columnID { get; set; }
-        public long? elevatorID { get; set; }
+        public long employee_id { get; set; }
+        public long building_id { get; set; }
+        public long? battery_id { get; set; }
+        public long? column_id { get; set; }
+        public long? elevator_id { get; set; }
         public DateTime dateAndTimeInterventionStart { get; set; }
         public DateTime dateAndTimeInterventionEnd { get; set; }
         public string result { get; set; }
