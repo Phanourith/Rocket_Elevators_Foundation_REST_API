@@ -9,9 +9,9 @@ namespace RocketApi.Models
         public long CustomerID { get; set; }
         public long BuildingID { get; set; }
         public long BatteryID { get; set; }
-        public long? ColumnID { get; set; }
-        public long? ElevatorID { get; set; }
-        public long? EmployeeID { get; set; }
+        public int? ColumnID { get; set; }
+        public int? ElevatorID { get; set; }
+        public int? EmployeeID { get; set; }
         public DateTime? StartDateAndTime { get; set; }
         public DateTime? EndDateAndTime { get; set; }
         public string Result { get; set; }
