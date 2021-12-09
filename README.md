@@ -12,11 +12,11 @@ PRESS SEND<br>
 
 2. PUT: Change the status of the intervention request to "InProgress" and add a start date and time (Timestamp).<br>
 
-DO THE FOLLOWING LIKE THE PICTURE BELOW<br>
+Do the following like the picture below<br>
 
 URL: http://localhost:5000/api/interventions/start/5<br>
 
-INSIDE THE BODY IN POSTMAN: `{
+Type inside the body in POSTMAN: `{
     "status": "InProgress"
 }`
 
@@ -24,11 +24,11 @@ INSIDE THE BODY IN POSTMAN: `{
 
 3. PUT: Change the status of the request for action to "Completed" and add an end date and time (Timestamp).<br>
 
-DO THE FOLLOWING LIKE THE PICTURE BELOW<br>
+Do the following like the picture below<br>
 
 URL: http://localhost:5000/api/interventions/start/5<br>
 
-INSIDE THE BODY IN POSTMAN: `{
+Type inside the body in POSTMAN: `{
     "status": "Completed"
 }`
 
