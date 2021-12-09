@@ -34,5 +34,9 @@ Type inside the body in POSTMAN: `{
 
 ![alt text](https://github.com/Phanourith/Rocket_Elevators_Foundation_REST_API/blob/main/PUT_Method_Complete.png)<br>
 
+## VIDEO EXPLANATION
+
+<em>LINK:</em>https://youtu.be/oVZrUaTP75g
+
 
 
