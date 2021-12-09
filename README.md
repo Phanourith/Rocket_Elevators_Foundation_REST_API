@@ -8,7 +8,7 @@ Put The following URL in POSTMAN with GET<br>
 
 http://localhost:5000/api/interventions/get-pendings<br>
 
-## PRESS SEND<br>
+<em>PRESS SEND</em><br>
 
 2. PUT: Change the status of the intervention request to "InProgress" and add a start date and time (Timestamp).<br>
 
