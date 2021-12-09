@@ -555,3 +555,4 @@ C:\Users\keosa\Rocket_Elevators_Foundation_REST_API\obj\Debug\net5.0\scopedcss\b
 C:\Users\keosa\Rocket_Elevators_Foundation_REST_API\obj\Debug\net5.0\RocketApi.RazorTargetAssemblyInfo.cache
 C:\Users\keosa\Rocket_Elevators_Foundation_REST_API\obj\Debug\net5.0\RocketApi.csproj.CopyComplete
 C:\Users\keosa\Rocket_Elevators_Foundation_REST_API\obj\Debug\net5.0\RocketApi.genruntimeconfig.cache
+C:\Users\keosa\Rocket_Elevators_Foundation_REST_API\bin\Debug\net5.0\appsettings.json
