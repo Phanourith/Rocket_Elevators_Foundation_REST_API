@@ -4,11 +4,11 @@
 
 ![alt text](https://github.com/Phanourith/Rocket_Elevators_Foundation_REST_API/blob/main/GET_Method.png)<br>
 
-PUT THE FOLLOWING URL IN POSTMAN WITH GET<br>
+Put The following URL in POSTMAN with GET<br>
 
 http://localhost:5000/api/interventions/get-pendings<br>
 
-PRESS SEND<br>
+## PRESS SEND<br>
 
 2. PUT: Change the status of the intervention request to "InProgress" and add a start date and time (Timestamp).<br>
 
